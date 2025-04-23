@@ -1,0 +1,124 @@
+* {
+  font-family: Arial;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: auto;
+}
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+
+.friend {
+  background-color: #eeeeeeaa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.friend:hover {
+  background-color: #fabf5338;
+}
+.friendName {
+  flex-grow: 1;
+  font-weight: 600;
+}
+.photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ownStatus {
+  font-weight: 300;
+  font-size: small;
+  padding-top: 2px;
+}
+.image {
+  width: 50px;
+  height: 50px;
+}
+.selectBtn,
+.addFriendBtn,
+.splitBillBtn,
+.submitAddFriendBtn,
+.cancel {
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: 600;
+  width: fit-content;
+  cursor: pointer;
+}
+.addFriendBtn,
+.splitBillBtn,
+.submitAddFriendBtn,
+.cancel {
+  align-self: flex-end;
+}
+.billDetails {
+  width: 400px;
+  background-color: #fabf5338;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: fit-content;
+  border-radius: 5px;
+}
+.billDetails div {
+  display: flex;
+  justify-content: space-between;
+}
+#billValue,
+#userValue,
+#friendExpense,
+#who,
+#name,
+#url {
+  width: 70px;
+  padding: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+}
+#billValue:focus,
+#userValue:focus,
+#friendExpense:focus,
+#who:focus,
+#name:focus,
+#url:focus {
+  border: 1px solid orange;
+  outline: none;
+  box-shadow: 0 0 3px orange;
+}
+
+.card {
+  background-color: #fabf5338;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.rightSide {
+  display: flex;
+  align-items: start;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
